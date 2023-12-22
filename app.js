@@ -8,9 +8,9 @@ const dotenv = require('dotenv');
 const passport = require('passport');
 const helmet = require('helmet');
 const hpp = require('hpp');
-const logger = require('./logger')
+const logger = require('./logger');
 const redis = require('redis');
-const RedisStore = require('connect-redis')(session);
+const RedisStore = require('connect-redis').default;
 
 dotenv.config();
 
